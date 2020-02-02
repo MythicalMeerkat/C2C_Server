@@ -1,0 +1,26 @@
+Jeff Wilson
+CS4310 Networks
+
+-----Commands to compile and run the program-----
+
+Server:
+- Compile: gcc -w server.c -o Server
+- Running: ./Server 10001
+
+Notes: 
+
+I used port number 10001 for testing and running. If the server displays a binding error, change the port number until it works.
+I hosted the server on eros.cs.txstate.edu. (IP: 147.26.231.152) It will work on other linux environments, the agent example below uses this IP.
+
+
+
+Agent:
+- Compile: gcc agent.c -o Agent
+- Running: ./Agent 147.26.231.153 10001 "#ACTION"
+
+Replace "#ACTION" with the following commands:
+- "#JOIN"
+- "#LEAVE"
+- "#LIST"
+- "#LOG"
+	
